@@ -1,59 +1,17 @@
-//creatin funtion
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-function sqaure(){
-    var num = 5;
-var result= num  * 2;
-document.write("result" + result + "<br>");
-}
-sqaure();
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-
-var num = 5;
-var result= num  * num;
-document.write("result" + result + "<br>");
-
-var num = 6;
-var result= num  + num;
-document.write("result" + result + "<br>");
-
-var num = 9;
-var result= num  - num;
-document.write("result" + result + "<br>");
-
-//calling funtion
-
-function sqaure(num){
-
-var result= num  * 2;
-document.write("the result" + result + "<br>");
-}
-sqaure(55);
-// creat funtion
-
-
-function sqaure(num1,num2){
-    var result= num1 * num2;
-document.write("Result="+ result+ "<br>")
-
-}
-sqaure(5,6);
-
-//add funtion
-
-function add(x,y){
-    var result= x+y;
-    document.write("sum"+result+ "<br>");
-}
-
-add(10,20)
-add(3,5);
-//sub
-function sub(x,y){
-    var result= x-y;
-    document.write("sum"+result+ "<br>");
-}
-
-sub(10,20)
-sub(3,5);
-
-//
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
